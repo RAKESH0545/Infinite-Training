@@ -1,0 +1,84 @@
+Classes and Objects : Class is a structural declaration of what is needed and how it is needed/accessed
+
+Object is an working copy of the class (instance of the class)
+          Data, behaviour and state
+
+This : is a pointer that points to the current instance/object 
+
+OOP - WYSIWYG
+
+- Encapsulation : Unit of Info. that consists of fields and functions
+                  Is a process of enclosing one or more items within a physical or logical package
+                  It prevents access to implementation details
+                  Is achieved using access specifiers
+
+- Abstraction :   Giving away only required data and hiding the rest
+
+- Inheritance :   Extensions
+
+- Polymorphism : Existing in many forms /different forms
+
+
+Note : since the Framework supports Garbage Collection to dispose any un utilized memory, there is no need for explicit destructor
+
+-- Methods and Parameters : In C# we have the following types to pass parameters
+ 1. Value  : where a copy of the parameter/argument value is passed
+ 2. Reference : where the address of the parameters value is passed
+ 3. Out  : Where we expect more than one result from a function 
+            Since a function can return only one type
+ 4. Parameter Array : Supports in providing an array of parameters values which can vary (0,1,2,or more)
+                     the parameter list is separated by a comma
+                     we need to use 'params' keyword to indicate it is an parameter array
+                     only one params is allowed per function
+                     params keyword should be the last in the argument list
+
+Note : All classes are internal by default
+       All Members of the class are private by default
+
+Access Specifiers : defines the scope and visibility of a class member. C# supports
+
+ a) Private : Accessible only in the class where it is declared . No access from anywhere else
+
+ b) Public : Accessible within or outside the assembly, with or without derivation.
+             We just need an object of the class to access
+
+ c) Protected : Accessible by the class where it is declared and all its derived classes
+                The derived classes may be in the same assembly or in another assembly
+                They are accessed using the object of the derived/sub/child class only
+
+ d) Internal : Are like public, which allows access within the assembly, and not other assemblies
+
+ e) Internal protected / Protected Internal : Internal to all the derived and non-derived classes of the current assembly 
+                  Protected to all the derived classes in other assembly
+
+Constructors : Are special function/s of the class
+               They have the same name as that of the class
+               They do not have any return type 
+               They can be overloaded 
+               They are meant for initializing the members
+               They are explicitly called like a normal function
+               They have to be either public or internal or protected, but not private
+
+Destructors : is a special function of the class
+              has the same name as that of the class preceded with a 'tilde ~'
+              no return type, no access specifiers 
+              cannot be overloaded ( only one per class)
+              cannot be called explicitly
+              are meant for deallocation of memory
+
+  
+Note : Initializing the base class members thru the derived class constructor by passing the values to the base class using ':base' keyword, when the base class has only parametrized constructor
+
+
+--this keyword usage in calling chain of constructors of the same class
+
+--static constructor : are used to initialize static members of the class
+                       they are invoked as soon as the class is referenced for the first time, unlike a instance constructor that is used to create a new instance for each object with the new keyword
+                       does not take any arguments
+                       does not take any modifiers
+                       does not initialize non-static members
+                       static constructor of a class executes at most one time during a single program instantiation
+                       eg: log file entries 
+ 
+
+ 
