@@ -1,0 +1,6 @@
+C:\Infinite-Training\CSharp\CodeChallenge1\CodeChallenge1\obj\Release\CodeChallenge1.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\CSharp\CodeChallenge1\CodeChallenge1\bin\Release\CodeChallenge1.exe.config
+C:\Infinite-Training\CSharp\CodeChallenge1\CodeChallenge1\bin\Release\CodeChallenge1.exe
+C:\Infinite-Training\CSharp\CodeChallenge1\CodeChallenge1\bin\Release\CodeChallenge1.pdb
+C:\Infinite-Training\CSharp\CodeChallenge1\CodeChallenge1\obj\Release\CodeChallenge1.exe
+C:\Infinite-Training\CSharp\CodeChallenge1\CodeChallenge1\obj\Release\CodeChallenge1.pdb

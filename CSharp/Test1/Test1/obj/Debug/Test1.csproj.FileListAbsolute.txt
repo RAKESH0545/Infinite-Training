@@ -1,0 +1,7 @@
+C:\Infinite-Training\CSharp\Test1\Test1\obj\Debug\Test1.csproj.AssemblyReference.cache
+C:\Infinite-Training\CSharp\Test1\Test1\obj\Debug\Test1.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\CSharp\Test1\Test1\bin\Debug\Test1.exe.config
+C:\Infinite-Training\CSharp\Test1\Test1\bin\Debug\Test1.exe
+C:\Infinite-Training\CSharp\Test1\Test1\bin\Debug\Test1.pdb
+C:\Infinite-Training\CSharp\Test1\Test1\obj\Debug\Test1.exe
+C:\Infinite-Training\CSharp\Test1\Test1\obj\Debug\Test1.pdb
