@@ -1,7 +1,0 @@
-C:\Infinite-Training\CSharp\Tasks\Task1\bin\Debug\Task1.exe.config
-C:\Infinite-Training\CSharp\Tasks\Task1\bin\Debug\Task1.exe
-C:\Infinite-Training\CSharp\Tasks\Task1\bin\Debug\Task1.pdb
-C:\Infinite-Training\CSharp\Tasks\Task1\obj\Debug\Task1.csproj.AssemblyReference.cache
-C:\Infinite-Training\CSharp\Tasks\Task1\obj\Debug\Task1.csproj.CoreCompileInputs.cache
-C:\Infinite-Training\CSharp\Tasks\Task1\obj\Debug\Task1.exe
-C:\Infinite-Training\CSharp\Tasks\Task1\obj\Debug\Task1.pdb
