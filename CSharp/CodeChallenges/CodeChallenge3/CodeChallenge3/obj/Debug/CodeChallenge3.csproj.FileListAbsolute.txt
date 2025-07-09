@@ -1,0 +1,7 @@
+C:\Infinite-Training\CSharp\CodeChallenges\CodeChallenge3\CodeChallenge3\bin\Debug\CodeChallenge3.exe.config
+C:\Infinite-Training\CSharp\CodeChallenges\CodeChallenge3\CodeChallenge3\bin\Debug\CodeChallenge3.exe
+C:\Infinite-Training\CSharp\CodeChallenges\CodeChallenge3\CodeChallenge3\bin\Debug\CodeChallenge3.pdb
+C:\Infinite-Training\CSharp\CodeChallenges\CodeChallenge3\CodeChallenge3\obj\Debug\CodeChallenge3.csproj.AssemblyReference.cache
+C:\Infinite-Training\CSharp\CodeChallenges\CodeChallenge3\CodeChallenge3\obj\Debug\CodeChallenge3.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\CSharp\CodeChallenges\CodeChallenge3\CodeChallenge3\obj\Debug\CodeChallenge3.exe
+C:\Infinite-Training\CSharp\CodeChallenges\CodeChallenge3\CodeChallenge3\obj\Debug\CodeChallenge3.pdb
