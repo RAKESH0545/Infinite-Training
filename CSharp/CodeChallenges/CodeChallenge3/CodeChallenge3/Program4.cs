@@ -29,10 +29,12 @@ namespace CodeChallenge3
 
                 CalculatorDelegate add = new CalculatorDelegate(Add);
                 CalculatorDelegate subtract = new CalculatorDelegate(Subtract);
-
+                CalculatorDelegate multiply = new CalculatorDelegate(Multiply);
+                
+                
                 Console.WriteLine($"Addition: {add(num1, num2)}");
                 Console.WriteLine($"Subtraction: {subtract(num1, num2)}");
-                Console.WriteLine($"Multiplication: {Multiply(num1, num2)}");
+                Console.WriteLine($"Multiplication: {multiply(num1, num2)}");
 
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadKey();
