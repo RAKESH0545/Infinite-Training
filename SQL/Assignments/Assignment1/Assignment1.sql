@@ -99,12 +99,17 @@ select * from Projects
 
 select * from empprojecttasks
 
-drop table clients
-
 drop table projects
 
 drop table departments
 
 drop table employees
 
-drop table empprojecttasks
+drop table empprojecttasks 
+
+drop table clients
+
+
+
+
+

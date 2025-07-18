@@ -50,17 +50,21 @@ select * from dept
 
 
 --1. List all employees whose name begins with 'A'. 
+--Query1
 select * from emp where ename like 'A%'
 
 --2. Select all those employees who don't have a manager. 
+--Query2
 select * from emp where mgr_id is null
 
 --3. List employee name, number and salary for those employees who earn in the range 1200 to 1400. 
+--Query3
 select ename 'Employee Name', salary 'Salary' from emp
 where salary between 1200 and 1400
 
 --4. Give all the employees in the RESEARCH department a 10% pay rise. 
 --	Verify that this has been done by listing all their details before and after the rise. 
+--Query4.1
 --	before
 select * from emp where deptno = 
 (select deptno from dept where dname = 'Research')
@@ -68,55 +72,68 @@ select * from emp where deptno =
 update emp set salary = salary * 1.10 where deptno = 
 (select deptno from dept where dname = 'Research')
 
+--Query4.2
 --after
 select * from emp where deptno = 
 (select deptno from dept where dname = 'Research')
 
 --5. Find the number of CLERKS employed. Give it a descriptive heading. 
+--Query5
 select count(*) 'No of Clerks Employed' from emp where job = 'clerk'
 
 --6. Find the average salary for each job type and the number of people employed in each job. 
+--Query6
 select job 'Job Name', avg(salary) 'Average Salary', count(*) 'No of people' from emp 
 group by job
 
 --7. List the employees with the lowest and highest salary. 
+--Query7
 select empno, ename, job, salary from emp where salary in(
 (select min(salary) from emp) , (select max(salary) from emp))
 
 --8. List full details of departments that don't have any employees. 
+--Query8
 select * from dept where deptno not in 
 (select distinct deptno from emp)
 
 --9. Get the names and salaries of all the analysts earning more than 1200 who are based in department 20. Sort the answer by ascending order of name. 
+--Query9
 select ename 'Employee Name', salary 'Employee Salary'from emp 
 where job = 'analyst' and salary > 1200 and deptno = 20
 order by ename
 
 --10. For each department, list its name and number together with the total salary paid to employees in that department. 
+--Query10
 select d.dname 'Department Name', d.deptno 'Department Number', sum(e.salary) from dept d, emp e
 where d.deptno = e.deptno
 group by d.deptno,d.dname
 
 --11. Find out salary of both MILLER and SMITH.
+--Query11
 select Ename, Salary from emp where ename = 'Miller' or ename = 'smith'
 
 --12. Find out the names of the employees whose name begin with ‘A’ or ‘M’. 
+--Query12
 select Ename 'Name' from emp where ename like '[AM]%' order by ename
 
 --13. Compute yearly salary of SMITH. 
+--Query13
 select ename 'Emp Name', (salary*12) 'Yearly Salary' from emp where ename = 'smith'
 
 --14. List the name and salary for all employees whose salary is not in the range of 1500 and 2850. 
+--Query14
 select ename 'Employee Name', salary 'Salary' from emp
 where salary not between 1500 and 2850
 order by salary
 
 --15. Find all managers who have more than 2 employees reporting to them
+--Query15
 select e1.mgr_id 'Manager ID', e1.ename 'Manager Name', count(e2.ename) 'Reporting Count'
 from emp e1 join emp e2
 on e1.empno = e2.mgr_id 
 group by e1.mgr_id, e1.ename
 having count(e2.empno) > 2
 
-drop table dept
 drop table emp
+
+drop table dept
