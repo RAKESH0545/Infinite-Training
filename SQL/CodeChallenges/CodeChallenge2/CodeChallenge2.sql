@@ -112,7 +112,7 @@ delete from employee
 where empno = 1;
 
 -- recall deleted row without losing increment of second row
-rollback;
+rollback ;
 
 --Question4
 -- check final data
@@ -199,6 +199,7 @@ exec updateSalesSalary;
 
 select * from emp2;
 
+drop table emp2
 
 
 
